@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 app.post('/check', (req, res) => {
     const text = req.body.text; 
-    const hateSpeech = detectHateSpeech(text); 
+    const hateSpeech = detectHateSpeech(text);
     res.render('index', { result: hateSpeech });
 });
 
